@@ -1,7 +1,37 @@
 document.addEventListener('DOMContentLoaded', startGame)
 
 // Define your `board` object here!
-// var board = 
+
+var board = {
+  cells: [
+  // 9 cells in the board, each with different properties for x, y, hidden, isMarked, isMine & surroundingMines
+    {row: 0, col: 0, hidden: true, isMarked: false, isMine: false, surroundingMines: 1},
+    {row: 0, col: 1, hidden: true, isMarked: false, isMine: true, surroundingMines: 0},
+    {row: 0, col: 2, hidden: true, isMarked: false, isMine: false, surroundingMines: 2},
+    {row: 1, col: 0, hidden: true, isMarked: false, isMine: false, surroundingMines: 1},
+    {row: 1, col: 1, hidden: true, isMarked: false, isMine: false, surroundingMines: 3},
+    {row: 1, col: 2, hidden: true, isMarked: false, isMine: true, surroundingMines: 0},
+    {row: 2, col: 0, hidden: true, isMarked: false, isMine: true, surroundingMines: 0},
+    {row: 2, col: 1, hidden: true, isMarked: false, isMine: false, surroundingMines: 2},
+    {row: 2, col: 2, hidden: true, isMarked: false, isMine: false, surroundingMines: 1}
+  ]
+}    
+  
+  /*  for (var x = 0; x < 3; x++) {
+    for (var y = 0; y < 3; y++) {
+      board.cells.push(
+        {
+          hidden: true;
+          isMine: ;
+          isMarked: false;
+          surr
+          
+        }
+      )
+    }
+
+  } */
+// 
 
 function startGame () {
   // Don't remove this function call: it makes the game work!
