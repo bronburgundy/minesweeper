@@ -35,7 +35,7 @@ function startGame () {  // Don't remove this function call: it makes the game w
 //
 // 1. Are all of the cells that are NOT mines visible?
 // 2. Are all of the mines marked?
-/*
+
 function checkForWin () {
   for (var i = 0; i < board.cells.length; i++) {
     if (cell.isMine && cell.isMarked) {
@@ -49,7 +49,7 @@ function checkForWin () {
 
   lib.displayMessage('You win!')
 }
-*/
+
 // Define this function to count the number of mines around the cell
 // (there could be as many as 8). You don't have to get the surrounding
 // cells yourself! Just use `lib.getSurroundingCells`: 
